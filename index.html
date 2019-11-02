@@ -1,123 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Estefanie Canseco Rios DevFolio</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
 
-<!doctype html>
-<html>
-  <head>
-    <title>Tarjeta de presentación online plantilla web | WIX</title>
-    
-   <!-- BEGIN SENTRY -->
-   <script src="https://browser.sentry-cdn.com/4.4.2/bundle.min.js" crossorigin="anonymous"></script>
-   <script type="text/javascript">
-     Sentry.init({
-       dsn: 'https://b0d320ce280a492696c6716fc0fd90dd@sentry.io/1366160',
-       release: "1.303.0",
-       environment: "production"
-     });
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="img/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="manifest" href="img/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 
-     Sentry.configureScope((scope) => {
-       scope.setUser({
-         id: "734634177|4a53a59c-2dd3-48fd-a2bc-e929a829c605",
-         clientId: "460bdb93-adf8-4d3a-96bb-b9a80b641090",
-       });
-       scope.setExtra("sessionId", "93706c4f-dfe9-4b9e-b73c-aed0e7614dbe");
-     });
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-   </script>
-   <!-- END SENTRY -->
- 
-    <script type='text/javascript' >window.NREUM||(NREUM={});NREUM.info = {"agent":"","beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"c99d7f1ab0","applicationID":"31527391,43022637","applicationTime":2.620022,"transactionName":"ZFAHNkNYXUBQVEUKXF0aIBpBS1ZAQl1CTHR2YUpNXFhBWFRDWA1UHkEAD0FVUkdUGkcKVkRQF01FXF5DXVZFBkAcDxEHXElfUkVSeAc=","queueTime":0,"ttGuid":"e9d5dc2bd58678","agentToken":null}; window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1130.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
-    <script type="text/javascript">
-        var initialTime = new Date().getTime();
-      (function () {
-        var appName = 'marketing-template-viewer';
-        window.appStartLoadTime = window.performance && window.performance.now();
-        window.fedops = window.fedops || {};
-        window.fedops.apps = window.fedops.apps || {};
-        window.fedops.apps[appName] = { startLoadTime: window.appStartLoadTime };
-        try { window.fedops.sessionId = window.localStorage.getItem('fedops.logger.sessionId'); } catch(e) {};
-        window.fedops.sessionId = window.fedops.sessionId || 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) { var r = Math.random()*16|0, v = c == 'x' ? r : (r&0x3|0x8); return v.toString(16); });
-        (new Image()).src = '//frog.wix.com/fed?appName=' + appName + '&src=72&evid=14&session_id=' + window.fedops.sessionId;
-      })();
-    </script>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    
-    <link type="image/png" href="//www.wix.com/favicon.ico" rel="shortcut icon">
-    <link rel="stylesheet" href="https://static.parastorage.com/services/third-party/fonts/Helvetica/fontFace.css">
-    <link rel="stylesheet" href="//static.parastorage.com/services/marketing-template-viewer/1.303.0/app.min.css">
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
-    <meta name="description" content="Esta plantilla web moderna, limpia y profesional de una página es una plataforma online perfecta para oradores y empresarios. Describe tus servicios, comparte tu calendario de eventos y proporciona enlaces a perfiles de redes sociales- ¡Comienza a editar para crear un sitio web profesional que represente tu impronta personal! ">
-    <meta name="author" content="Wixpress">
-    <meta http-equiv="content-language" content="es"/>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
 
-    <meta property="og:title" content="Tarjeta de presentación online plantilla web | WIX"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:url" content="https://es.wix.com/website-template/view/html/1063"/>
-    <meta property="og:image" content="//static.wixstatic.com/media/80c9fd7717454a0dbc62ad0299ea9001.jpg"/>
-    <meta content="Wix" property="og:site_name">
-    <meta property="og:description" content="Esta plantilla web moderna, limpia y profesional de una página es una plataforma online perfecta para oradores y empresarios. Describe tus servicios, comparte tu calendario de eventos y proporciona enlaces a perfiles de redes sociales- ¡Comienza a editar para crear un sitio web profesional que represente tu impronta personal! "/>
-    <meta property="fb:admins" content="731184828"/>
-    <meta name="fb:app_id" content="236335823061286"/>
-    <meta name="google-site-verification" content="QXhlrY-V2PWOmnGUb8no0L-fKzG48uJ5ozW0ukU7Rpo"/>
+  <!-- =======================================================
+    Theme Name: DevFolio
+    Theme URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+</head>
 
-    <link rel="canonical" href="https://es.wix.com/website-template/view/html/1063"/>
+<body id="page-top">
 
-    <link rel="alternate" hreflang="fr" href="https://fr.wix.com/website-template/view/html/1063"/>
-    <link rel="alternate" hreflang="pt" href="https://pt.wix.com/website-template/view/html/1063"/>
-    <link rel="alternate" hreflang="cs" href="https://cs.wix.com/website-template/view/html/1063"/>
-    <link rel="alternate" hreflang="it" href="https://it.wix.com/website-template/view/html/1063"/>
-    <link rel="alternate" hreflang="nl" href="https://nl.wix.com/website-template/view/html/1063"/>
-    <link rel="alternate" hreflang="ko" href="https://ko.wix.com/website-template/view/html/1063"/>
-    <link rel="alternate" hreflang="de" href="https://de.wix.com/website-template/view/html/1063"/>
-    <link rel="alternate" hreflang="ru" href="https://ru.wix.com/website-template/view/html/1063"/>
-    <link rel="alternate" hreflang="sv" href="https://sv.wix.com/website-template/view/html/1063"/>
-    <link rel="alternate" hreflang="tr" href="https://tr.wix.com/website-template/view/html/1063"/>
-    <link rel="alternate" hreflang="da" href="https://da.wix.com/website-template/view/html/1063"/>
-    <link rel="alternate" hreflang="en" href="https://www.wix.com/website-template/view/html/1063"/>
-    <link rel="alternate" hreflang="es" href="https://es.wix.com/website-template/view/html/1063"/>
-    <link rel="alternate" hreflang="hi" href="https://hi.wix.com/website-template/view/html/1063"/>
-    <link rel="alternate" hreflang="ja" href="https://ja.wix.com/website-template/view/html/1063"/>
-    <link rel="alternate" hreflang="no" href="https://no.wix.com/website-template/view/html/1063"/>
-    <link rel="alternate" hreflang="pl" href="https://pl.wix.com/website-template/view/html/1063"/>
-    <link rel="alternate" hreflang="x-default" href="https://www.wix.com/website-template/view/html/1063" />
+  <!--/ Nav Star /-->
+  <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll" href="#page-top">DevFolio</a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#service">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#work">Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#blog">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--/ Nav End /-->
 
-  </head>
-  <body>
-     <!-- Google Tag Manager -->
-  <noscript>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MDD5C4" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe>
-  </noscript>
-  <script type="text/javascript">
-    (function (w, d, s, l, i) {
-      w[l] = w[l] || [];
-      w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
-      var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
-      j.async = true;
-      j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-      f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-MDD5C4');
-  </script>
-  <!-- End Google Tag Manager -->
-    <div id="root"><div data-hooks="app-component" data-reactroot="" data-reactid="1" data-react-checksum="805476119"><div data-hooks="ToolBar-component" class="_1GEsV" data-reactid="2"><div class="_1k3yn" data-reactid="3"><a data-hooks="logo" href="https://www.wix.com" class="_2UVAQ _1JQgh" data-reactid="4"><span class="_18myF" data-reactid="5">wix.com</span></a><div class="_1k3yn" data-reactid="6"><button data-hooks="desktop-view" class="zy9-w _37uQn" data-reactid="7"><span class="AGc6i" data-reactid="8">mostrar versión de computadora</span></button><hr class="_3PFGd" data-reactid="9"/><button data-hooks="mobile-view" class="aR03A " data-reactid="10"><span class="AGc6i" data-reactid="11">mostrar versión móvil</span></button></div></div><div class="_1k3yn _3yC7e" data-reactid="12"><p data-hooks="tool-bar-title" class="_21v7p" data-reactid="13">Haz clic en Editar y crea tu increíble página web</p><a data-hooks="info-view" class="_1JERd " tabindex="0" role="dialog" href="#" data-reactid="14">Saber más</a><a class="_1c4Ff" data-hooks="editor-link" href="https://editor.wix.com/html/editor/web/renderer/new?metaSiteId=13110217-bb9a-2386-903e-c61607a95430&amp;siteId=13110230-9d03-bedf-bd74-7e88d98c6bae&amp;editorSessionId=7EB5B8D3-0802-4064-31CD-F47C3CA9AEE8" target="_blank" tabindex="0" data-reactid="15">Editar este sitio</a><label data-hooks="price" class="_8r8sw" data-reactid="16"><!-- react-text: 17 -->Precio:<!-- /react-text --><!-- react-text: 18 --> <!-- /react-text --><!-- react-text: 19 -->Gratis<!-- /react-text --></label></div></div><div data-hooks="template-demo-component" class="_1qF-6 " data-reactid="20"><div data-hooks="desktop-view-component" class="_3W_Qh" data-reactid="21"><iframe data-hooks="desktop-iframe" src="https://www.wix.com/demone2/online-business-card" width="100%" height="100%" class="_2oDbB" data-reactid="22"></iframe></div></div><div data-hooks="info-pop-up-component" class="moyRL " data-reactid="23"><div class="_3sdF3" data-reactid="24"><button data-hooks="card-close" class="_3nPGC" data-reactid="25"><span class="b6lR7" data-reactid="26">cerrar</span></button><div class="_3G2Wr" data-reactid="27"><h1 data-hooks="card-title" class="_36ndT" data-reactid="28">Tarjeta de presentación online - Website Template</h1><div class="_3C1IB" data-reactid="29"><h3 data-hooks="card-good-for-title" class="_3wC-t" data-reactid="30">Bueno para:</h3><p data-hooks="card-good-for" class="_25OEI" data-reactid="31">Oradores, empresarios, profesionales y consultores. </p></div><div class="_3C1IB" data-reactid="32"><h3 class="_3wC-t" data-reactid="33">Descripción:</h3><p data-hooks="card-description" class="_25OEI" data-reactid="34">Esta plantilla web moderna, limpia y profesional de una página es una plataforma online perfecta para oradores y empresarios. Describe tus servicios, comparte tu calendario de eventos y proporciona enlaces a perfiles de redes sociales- ¡Comienza a editar para crear un sitio web profesional que represente tu impronta personal! </p></div><p class="_25OEI _3C1IB _1favE" data-reactid="35"><span class="_3wC-t" data-reactid="36">Precio:</span><!-- react-text: 37 --> <!-- /react-text --><!-- react-text: 38 -->Gratis<!-- /react-text --></p></div><div class="_8CQO7" data-reactid="39"><a data-hooks="card-editor-url" class="_15Xoe _2VXta" target="_blank" href="https://editor.wix.com/html/editor/web/renderer/new?metaSiteId=13110217-bb9a-2386-903e-c61607a95430&amp;siteId=13110230-9d03-bedf-bd74-7e88d98c6bae&amp;editorSessionId=7EB5B8D3-0802-4064-31CD-F47C3CA9AEE8" data-reactid="40">Editar ahora</a></div></div></div></div></div>
-    <script>
-      window.__BASEURL__ = '/website-template/view/html/';
-      window.__INITIAL_I18N__ = {"locale":"es","resources":{"template.viewer.info.desktop.only.notice":"Edita esta plantilla entrando a Wix.com en tu computador, donde puedes personalizar todas nuestras hermosas plantillas.","template.viewer.edit.button":"Editar este sitio","a11y.close.popup.button":"cerrar","messages_test":"test","template.viewer.title":"Haz clic en Editar y crea tu increíble página web","a11y.mobile.button":"mostrar versión móvil","template.viewer.info.goodFor":"Bueno para:","template_button_label":"Editar página web","Description":"Description","Price":"Price","Edit Template":"Edit Template","template.viewer.price":"Precio:","template.viewer.info.edit.button":"Editar ahora","a11y.desktop.button":"mostrar versión de computadora","template.viewer.page.title":"{{- title}} plantilla web | WIX","template.viewer.info.description":"Descripción:","About This Template":"About This Template","template_seeFeatures_label":"Ver todas las funciones","template_expand_examples_text":"Genial para:","template.viewer.back":"Volver","template_expand_header":"Funciones de la plantilla","template.viewer.info.title":"{{- title}} - Website Template","Good For":"Good For","template.viewer.read.more":"Saber más","template.viewer.see.all.templates":"See All Templates"}}
-      window.__INITIAL_STATE__ = {"view":{"selected":"desktop"},"loading":{"active":false},"template":{"title":"Tarjeta de presentación online","description":"Esta plantilla web moderna, limpia y profesional de una página es una plataforma online perfecta para oradores y empresarios. Describe tus servicios, comparte tu calendario de eventos y proporciona enlaces a perfiles de redes sociales- ¡Comienza a editar para crear un sitio web profesional que represente tu impronta personal! ","image":"80c9fd7717454a0dbc62ad0299ea9001.jpg","id":"1063","lng":"es","price":"Gratis","docUrl":"https:\u002F\u002Fwww.wix.com\u002Fdemone2\u002Fonline-business-card","editorUrl":"https:\u002F\u002Feditor.wix.com\u002Fhtml\u002Feditor\u002Fweb\u002Frenderer\u002Fnew?metaSiteId=13110217-bb9a-2386-903e-c61607a95430&siteId=13110230-9d03-bedf-bd74-7e88d98c6bae&editorSessionId=7EB5B8D3-0802-4064-31CD-F47C3CA9AEE8","goodFor":"Oradores, empresarios, profesionales y consultores. ","siteId":"13110230-9d03-bedf-bd74-7e88d98c6bae","metaSiteId":"13110217-bb9a-2386-903e-c61607a95430","editorSessionId":"7EB5B8D3-0802-4064-31CD-F47C3CA9AEE8","url":"https:\u002F\u002Fwww.wix.com\u002Fdemone2\u002Fonline-business-card"},"info":{"show":false},"experiments":{"active":["EnableAnonMainFunnelIntro","TemplatesGallerySearchToCMS","TemplatesGalleryDatasourceToCMS","TemplateViewerUseNewLightboxDealer","TemplateViewerDatasourceToCMS","TemplatesViewerEmbedChat"]},"originUrl":"https:\u002F\u002Fwww.wix.com\u002Fwebsite\u002Ftemplates\u002Fhtml\u002Fportfolio-cv\u002Fresumes-cvs","config":{"locale":"es","dealerCmsTranslationsUrl":"\u002F\u002Fstatic.parastorage.com\u002Fservices\u002Fdealer-cms-translations\u002F1.1679.0\u002F","dealerLightboxUrl":"\u002F\u002Fstatic.parastorage.com\u002Fservices\u002Fdealer-lightbox\u002F1.21.0\u002F"}};
-      window.__BI__ = {"siteId":"13110230-9d03-bedf-bd74-7e88d98c6bae","metaSiteId":"13110217-bb9a-2386-903e-c61607a95430","originUrl":"https:\u002F\u002Fwww.wix.com\u002Fwebsite\u002Ftemplates\u002Fhtml\u002Fportfolio-cv\u002Fresumes-cvs"};
-      window.__BI__.initialTime = initialTime;
-      window.__DEVICE__ = 'desktop';
-    </script>
-    <script src="https://static.parastorage.com/unpkg/react@15.6.2/dist/react.min.js" crossorigin></script>
-    <script src="https://static.parastorage.com/unpkg/react-dom@15.6.2/dist/react-dom.min.js" crossorigin></script>
-    <script src="https://static.parastorage.com/unpkg/@wix/marketing-cookie-notification@1.0.429/dist/statics/app.bundle.min.js"></script>
-    
-      
-        <script src="//static.parastorage.com/services/dealer-lightbox/1.21.0/dealer-lightbox.bundle.min.js"></script>
-      
-    
+  <!--/ Intro Skew Star /-->
+  <div id="home" class="intro route bg-image" style="background-image: url(img/mexico-city-skyline.jpg)">
+    <div class="overlay-itro"></div>
+    <div class="intro-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          <!--<p class="display-6 color-d">Hello, world!</p>-->
+          <h2 class="intro-title mb-4">I am Estefanie Canseco</h2>
+          <p class="intro-subtitle"><span class="text-slider-items">Web Developer,Frontend Developer,Backend Developer, Automation Engineer, Quality Engineer</span><strong class="text-slider"></strong></p>
+          <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/ Intro Skew End /-->
 
-    <script src="//static.parastorage.com/services/marketing-template-viewer/1.303.0/app.bundle.min.js"></script>
-  </body>
+  <section id="about" class="about-mf sect-pt4 route">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="box-shadow-full">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col-sm-6 col-md-5">
+                    <div class="about-img">
+                      <img src="img/myPhoto.jpg" class="img-fluid rounded b-shadow-a" alt="">
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-7">
+                    <div class="about-info">
+                      <p><span class="title-s">Name: </span> <span>Estefanie Canseco Rios</span></p>
+                      <p><span class="title-s">Profile: </span> <span>full stack developer</span></p>
+                      <p><span class="title-s">Email: </span> <span>estefc.rios@gmail.com</span></p>
+                      <p><span class="title-s">Phone: </span> <span>(314) 601-4787</span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="skill-mf">
+                  <p class="title-s">Skill</p>
+                  <span>HTML</span> <span class="pull-right">85%</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                  <span>CSS3</span> <span class="pull-right">75%</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                  <span>PHP</span> <span class="pull-right">50%</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                  <span>JAVASCRIPT</span> <span class="pull-right">90%</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="about-me pt-4 pt-md-0">
+                  <div class="title-box-2">
+                    <h5 class="title-left">
+                      About me
+                    </h5>
+                  </div>
+                  <p class="lead">
+                    Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur arcu erat, accumsan id
+                    imperdiet et, porttitor
+                    at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Nulla
+                    porttitor accumsan tincidunt.
+                  </p>
+                  <p class="lead">
+                    Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor eget felis
+                    porttitor volutpat. Vestibulum
+                    ac diam sit amet quam vehicula elementum sed sit amet dui. porttitor at sem.
+                  </p>
+                  <p class="lead">
+                    Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium ut lacinia in, elementum id enim.
+                    Nulla porttitor accumsan
+                    tincidunt. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--/ Section Services Star /-->
+  <section id="service" class="services-mf route">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="title-box text-center">
+            <h3 class="title-a">
+              Services
+            </h3>
+            <p class="subtitle-a">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            </p>
+            <div class="line-mf"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="ion-monitor"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">Web Design</h2>
+              <p class="s-description text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+                provident vitae! Magni
+                tempora perferendis eum non provident.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="ion-code-working"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">Web Development</h2>
+              <p class="s-description text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+                provident vitae! Magni
+                tempora perferendis eum non provident.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="ion-camera"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">Photography</h2>
+              <p class="s-description text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+                provident vitae! Magni
+                tempora perferendis eum non provident.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="ion-android-phone-portrait"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">Responsive Design</h2>
+              <p class="s-description text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+                provident vitae! Magni
+                tempora perferendis eum non provident.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="ion-paintbrush"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">Graphic Design</h2>
+              <p class="s-description text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+                provident vitae! Magni
+                tempora perferendis eum non provident.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-ico">
+              <span class="ico-circle"><i class="ion-stats-bars"></i></span>
+            </div>
+            <div class="service-content">
+              <h2 class="s-title">Marketing Services</h2>
+              <p class="s-description text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
+                provident vitae! Magni
+                tempora perferendis eum non provident.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ Section Services End /-->
+
+  <div class="section-counter paralax-mf bg-image" style="background-image: url(img/counters-bg.jpg)">
+    <div class="overlay-mf"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3 col-lg-3">
+          <div class="counter-box">
+            <div class="counter-ico">
+              <span class="ico-circle"><i class="ion-checkmark-round"></i></span>
+            </div>
+            <div class="counter-num">
+              <p class="counter">450</p>
+              <span class="counter-text">WORKS COMPLETED</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 col-lg-3">
+          <div class="counter-box pt-4 pt-md-0">
+            <div class="counter-ico">
+              <span class="ico-circle"><i class="ion-ios-calendar-outline"></i></span>
+            </div>
+            <div class="counter-num">
+              <p class="counter">15</p>
+              <span class="counter-text">YEARS OF EXPERIENCE</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 col-lg-3">
+          <div class="counter-box pt-4 pt-md-0">
+            <div class="counter-ico">
+              <span class="ico-circle"><i class="ion-ios-people"></i></span>
+            </div>
+            <div class="counter-num">
+              <p class="counter">550</p>
+              <span class="counter-text">TOTAL CLIENTS</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 col-lg-3">
+          <div class="counter-box pt-4 pt-md-0">
+            <div class="counter-ico">
+              <span class="ico-circle"><i class="ion-ribbon-a"></i></span>
+            </div>
+            <div class="counter-num">
+              <p class="counter">36</p>
+              <span class="counter-text">AWARD WON</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--/ Section Portfolio Star /-->
+  <section id="work" class="portfolio-mf sect-pt4 route">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="title-box text-center">
+            <h3 class="title-a">
+              Portfolio
+            </h3>
+            <p class="subtitle-a">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            </p>
+            <div class="line-mf"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="img/work-1.jpg" data-lightbox="gallery-mf">
+              <div class="work-img">
+                <img src="img/work-1.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Lorem impsum dolor</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <span class="ion-ios-plus-outline"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="img/work-2.jpg" data-lightbox="gallery-mf">
+              <div class="work-img">
+                <img src="img/work-2.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Loreda Cuno Nere</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <span class="ion-ios-plus-outline"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="img/work-3.jpg" data-lightbox="gallery-mf">
+              <div class="work-img">
+                <img src="img/work-3.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Mavrito Lana Dere</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <span class="ion-ios-plus-outline"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="img/work-4.jpg" data-lightbox="gallery-mf">
+              <div class="work-img">
+                <img src="img/work-4.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Bindo Laro Cado</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <span class="ion-ios-plus-outline"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="img/work-5.jpg" data-lightbox="gallery-mf">
+              <div class="work-img">
+                <img src="img/work-5.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Studio Lena Mado</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <span class="ion-ios-plus-outline"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="work-box">
+            <a href="img/work-6.jpg" data-lightbox="gallery-mf">
+              <div class="work-img">
+                <img src="img/work-6.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Studio Big Bang</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2017</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <span class="ion-ios-plus-outline"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  <!--/ Section Portfolio End /-->
+
+  <!--/ Section Testimonials Star /-->
+  <div class="testimonials paralax-mf bg-image" style="background-image: url(img/overlay-bg.jpg)">
+    <div class="overlay-mf"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div id="testimonial-mf" class="owl-carousel owl-theme">
+            <div class="testimonial-box">
+              <div class="author-test">
+                <img src="img/testimonial-2.jpg" alt="" class="rounded-circle b-shadow-a">
+                <span class="author">Xavi Alonso</span>
+              </div>
+              <div class="content-test">
+                <p class="description lead">
+                  Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit.
+                </p>
+                <span class="comit"><i class="fa fa-quote-right"></i></span>
+              </div>
+            </div>
+            <div class="testimonial-box">
+              <div class="author-test">
+                <img src="img/testimonial-4.jpg" alt="" class="rounded-circle b-shadow-a">
+                <span class="author">Marta Socrate</span>
+              </div>
+              <div class="content-test">
+                <p class="description lead">
+                  Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit.
+                </p>
+                <span class="comit"><i class="fa fa-quote-right"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--/ Section Blog Star /-->
+  <section id="blog" class="blog-mf sect-pt4 route">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="title-box text-center">
+            <h3 class="title-a">
+              Blog
+            </h3>
+            <p class="subtitle-a">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            </p>
+            <div class="line-mf"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card card-blog">
+            <div class="card-img">
+              <a href="blog-single.html"><img src="img/post-1.jpg" alt="" class="img-fluid"></a>
+            </div>
+            <div class="card-body">
+              <div class="card-category-box">
+                <div class="card-category">
+                  <h6 class="category">Travel</h6>
+                </div>
+              </div>
+              <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>
+              <p class="card-description">
+                Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
+                a pellentesque nec,
+                egestas non nisi.
+              </p>
+            </div>
+            <div class="card-footer">
+              <div class="post-author">
+                <a href="#">
+                  <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle">
+                  <span class="author">Morgan Freeman</span>
+                </a>
+              </div>
+              <div class="post-date">
+                <span class="ion-ios-clock-outline"></span> 10 min
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-blog">
+            <div class="card-img">
+              <a href="blog-single.html"><img src="img/post-2.jpg" alt="" class="img-fluid"></a>
+            </div>
+            <div class="card-body">
+              <div class="card-category-box">
+                <div class="card-category">
+                  <h6 class="category">Web Design</h6>
+                </div>
+              </div>
+              <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>
+              <p class="card-description">
+                Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
+                a pellentesque nec,
+                egestas non nisi.
+              </p>
+            </div>
+            <div class="card-footer">
+              <div class="post-author">
+                <a href="#">
+                  <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle">
+                  <span class="author">Morgan Freeman</span>
+                </a>
+              </div>
+              <div class="post-date">
+                <span class="ion-ios-clock-outline"></span> 10 min
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-blog">
+            <div class="card-img">
+              <a href="blog-single.html"><img src="img/post-3.jpg" alt="" class="img-fluid"></a>
+            </div>
+            <div class="card-body">
+              <div class="card-category-box">
+                <div class="card-category">
+                  <h6 class="category">Web Design</h6>
+                </div>
+              </div>
+              <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>
+              <p class="card-description">
+                Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
+                a pellentesque nec,
+                egestas non nisi.
+              </p>
+            </div>
+            <div class="card-footer">
+              <div class="post-author">
+                <a href="#">
+                  <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle">
+                  <span class="author">Morgan Freeman</span>
+                </a>
+              </div>
+              <div class="post-date">
+                <span class="ion-ios-clock-outline"></span> 10 min
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ Section Blog End /-->
+
+  <!--/ Section Contact-Footer Star /-->
+  <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(img/overlay-bg.jpg)">
+    <div class="overlay-mf"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="contact-mf">
+            <div id="contact" class="box-shadow-full">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="title-box-2">
+                    <h5 class="title-left">
+                      Send Message Us
+                    </h5>
+                  </div>
+                  <div>
+                      <form action="" method="post" role="form" class="contactForm">
+                      <div id="sendmessage">Your message has been sent. Thank you!</div>
+                      <div id="errormessage"></div>
+                      <div class="row">
+                        <div class="col-md-12 mb-3">
+                          <div class="form-group">
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                            <div class="validation"></div>
+                          </div>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                          <div class="form-group">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                            <div class="validation"></div>
+                          </div>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                            <div class="form-group">
+                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                              <div class="validation"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                          <div class="form-group">
+                            <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                            <div class="validation"></div>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="title-box-2 pt-4 pt-md-0">
+                    <h5 class="title-left">
+                      Get in Touch
+                    </h5>
+                  </div>
+                  <div class="more-info">
+                    <p class="lead">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorum dolorem soluta quidem
+                      expedita aperiam aliquid at.
+                      Totam magni ipsum suscipit amet? Autem nemo esse laboriosam ratione nobis
+                      mollitia inventore?
+                    </p>
+                    <ul class="list-ico">
+                      <li><span class="ion-ios-location"></span> 329 WASHINGTON ST BOSTON, MA 02108</li>
+                      <li><span class="ion-ios-telephone"></span> (617) 557-0089</li>
+                      <li><span class="ion-email"></span> contact@example.com</li>
+                    </ul>
+                  </div>
+                  <div class="socials">
+                    <ul>
+                      <li><a href=""><span class="ico-circle"><i class="ion-social-facebook"></i></span></a></li>
+                      <li><a href=""><span class="ico-circle"><i class="ion-social-instagram"></i></span></a></li>
+                      <li><a href=""><span class="ico-circle"><i class="ion-social-twitter"></i></span></a></li>
+                      <li><a href=""><span class="ico-circle"><i class="ion-social-pinterest"></i></span></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="copyright-box">
+              <p class="copyright">&copy; Copyright <strong>DevFolio</strong>. All Rights Reserved</p>
+              <div class="credits">
+                <!--
+                  All the links in the footer should remain intact.
+                  You can delete the links only if you purchased the pro version.
+                  Licensing information: https://bootstrapmade.com/license/
+                  Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
+                -->
+                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+  <!--/ Section Contact-footer End /-->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <div id="preloader"></div>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/popper/popper.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/counterup/jquery.waypoints.min.js"></script>
+  <script src="lib/counterup/jquery.counterup.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="lib/typed/typed.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+</body>
 </html>
